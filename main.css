@@ -1,1 +1,9 @@
 
+@font-face {
+    font-family: ostrich;
+    src: url(ostrich-regular.otf);
+}
+
+h1 {
+  font-family: ostrich;
+}
