@@ -1,16 +1,10 @@
 
 @font-face {
-    font-family: ostrich;
-    src: url(ostrich-regular.ttf);
+  font-family: butler;
+  src: url(fonts/Butler/Butler_Regular.otf);
 }
 
 h1 {
-  font-family: ostrich;
+  font-family: butler;
   text-align: center;
-  width: 300px;
-  height: 34px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -34px 0 0 -150px;
 }
