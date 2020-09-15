@@ -4,7 +4,21 @@
   src: url(fonts/Butler/Butler_Regular.otf);
 }
 
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 h1 {
+  font-family: butler;
+  text-align: center;
+}
+
+h2 {
   font-family: butler;
   text-align: center;
 }
