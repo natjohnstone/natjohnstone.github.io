@@ -2,6 +2,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 let speachContent = document.querySelector('.speach-container');
 
+
+const initalText = document.querySelector('.feet-text-container');
+initalText.style.display = 'none';
+
 displaySpeachText = (speachObj) => {
     speachContent.style.display = 'block';
     speachObj.style.display = 'block';
@@ -52,7 +56,9 @@ let feetContent = document.querySelector('.feet-content');
 displayFeetAndText = (footObj) => {
     feetContent.style.display = 'block';
     const img = footObj.querySelector('img');
+    const div = footObj.querySelector('div');
     img.style.opacity = "1";
+    div.style.display = "block";
 };
 
 hideOnEnd = (footObj) => {
