@@ -2,7 +2,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 let speachContent = document.querySelector('.speach-container');
 
-
 const initalText = document.querySelector('.feet-text-container');
 initalText.style.display = 'none';
 
@@ -14,8 +13,13 @@ displaySpeachText = (speachObj) => {
 };
 
 hideSpeachOnEnd = (speachObj) => {
-    //speachContent.style.display = 'none';
-    //speachObj.style.opacity = '0';
+    speachContent.style.display = 'none';
+};
+
+
+showSpeachOnChangeDirection = (speachObj) => {
+    speachContent.style.display = 'block';
+    speachObj.style.display = 'block';
 };
 
 const speach = [...document.querySelectorAll('.speach')];
@@ -42,14 +46,15 @@ speach.forEach((comment, i) => {
             displaySpeachText(comment);
         },
         onLeave: () => { hideSpeachOnEnd(comment)},
+        onUpdate: (self) => {
+            if (self.direction == -1) {
+                showSpeachOnChangeDirection(comment)
+            }
+            
+        }
 	})
 });
 
-
-hideInitialtext = () => {
-    // const initalText = document.querySelector('.initial-text');
-    // initalText.style.display = 'none';
-};
 
 let feetContent = document.querySelector('.feet-content');
 
@@ -93,23 +98,18 @@ feet.forEach((foot, i) => {
         end: () => `+=${innerHeight}`,
         pin: true,
         onEnter: () => {
-            hideInitialtext();
             displayFeetAndText(foot);
         },
         onEnterBack: () => { 
-            hideInitialtext();
             displayFeetAndText(foot); 
         },
         onLeave: () => { 
-            console.log("HIDE ON LEAVE")
             hideOnEnd(foot)
         },
         onLeaveBack: () => { 
-            
-            console.log("HIDE ON LEAVE BACK");
             hideOnEnd(foot); 
         },
-        onUpdate: () => {
+        onUpdate: (self) => {
             if (self.direction == -1) {
                 showOnChangeDirection(foot)
             }

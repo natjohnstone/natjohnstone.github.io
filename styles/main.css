@@ -238,10 +238,8 @@ a {
   color: black;
 }
 
-@media only screen and (max-height: 700px) and (max-width: 600px) {
+@media only screen and (max-height: 800px) and (max-width: 450px) {
   .speach-img {
-
-    margin-top: 7vh;
-
+    margin-bottom: -40vh;
   }
 }
