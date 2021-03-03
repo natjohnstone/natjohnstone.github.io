@@ -12,6 +12,8 @@ if (navigator.appVersion.indexOf("Win") != -1)
     feetImg.style.marginRight = '-32px';
 }
 
+
+
 displaySpeachText = (speachObj) => {
     speachContent.style.display = 'block';
     speachObj.style.display = 'block';
@@ -38,16 +40,16 @@ speach.forEach((comment, i) => {
             scrollTrigger: {
               trigger: ".head-section",
               start: "top top",
-              end: "+=" + (innerHeight * 5),
+              end: "+=" + (innerHeight * 7),
               pin: true,
               scrub: true
             }
           })
 	ScrollTrigger.create({
         trigger: comment,
-        x: 50,
+        // x: 50,
         start: "bottom bottom",
-        end: () => `+=${innerHeight}`,
+        end: () => `+=${innerHeight*1.3}`,
         pin: true,
         onEnter: () => {
             displaySpeachText(comment);
