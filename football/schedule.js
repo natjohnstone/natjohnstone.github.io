@@ -106,7 +106,7 @@ var Nat = {
     getevents: function () {
         var data = {
             April: [
-                //{Date: "Monday the 3rd", Time: "1:00pm", Type: "Central League Game", Verses: "Wellington United", Where: "Newtown Park" },
+                {Date: "Monday the 3rd", Time: "1:00pm", Type: "Central League Game", Verses: "Wellington United", Where: "Newtown Park" },
             ]
         };
         

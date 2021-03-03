@@ -1,0 +1,114 @@
+
+@font-face {
+  font-family: indieFlower;
+  src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+body {
+  margin:0;
+  font-family: indieFlower;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.head-img {
+  height: 100vh;
+  width: auto;
+}
+
+.body-img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.feet-img-container {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.feet-img {
+  display: none;
+  width: 100vw;
+  height: auto;
+}
+/* 
+.feet1, .feet2, .feet3, .feet4  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.feet2 {
+  top: calc(100vh)
+}
+
+.feet3 {
+  top: calc(100vh * 2)
+}
+
+.feet4 {
+  top: calc(100vh * 3)
+} */
+
+
+.speach-img-container {
+  height: 50vh;
+  top: 50vh;
+  position: absolute;
+  left: 40vw;
+  right: 0;
+  margin-left: 20vh;
+}
+
+.speach-img
+{
+  width: auto;
+  height: 30vh;
+  margin: auto auto;
+}
+
+.speach-container {
+  /* position: absolute;
+  top: 68vh;
+  left: 45vw;
+  right: 0;
+  margin-left: auto auto; */
+}
+.speach {
+  height: 50%;
+  width: 100%;
+}
+
+.speach-container h3 {
+  width: 20vh;
+  margin: auto auto;
+  font-size: 2em;
+  font-family: indieFlower;
+}
+
+.visable {
+  display: block !important;
+}
+
+.text1, .text2, .text3 {
+  display: none;
+}
