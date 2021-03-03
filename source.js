@@ -5,6 +5,13 @@ let speachContent = document.querySelector('.speach-container');
 const initalText = document.querySelector('.feet-text-container');
 initalText.style.display = 'none';
 
+if (navigator.appVersion.indexOf("Win") != -1)
+{
+    // not ideal
+    const feetImg = document.querySelector('.feet-img');
+    feetImg.style.marginRight = '-32px';
+}
+
 displaySpeachText = (speachObj) => {
     speachContent.style.display = 'block';
     speachObj.style.display = 'block';
