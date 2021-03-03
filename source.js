@@ -75,7 +75,7 @@ feet.forEach((foot, i) => {
             scrollTrigger: {
               trigger: ".body-section",
               start: "top top",
-              end: "+=" + (innerHeight * 5.5),
+              end: "+=" + (innerHeight * 7),
               pin: true,
               scrub: true
             }
@@ -95,9 +95,11 @@ feet.forEach((foot, i) => {
             displayFeetAndText(foot); 
         },
         onLeave: () => { 
-            hideOnEnd(foot)
+            hideOnEnd(foot);
         },
-        onLeaveBack: () => { hideOnEnd(foot); },
+        onLeaveBack: () => { 
+            hideOnEnd(foot); 
+        },
         onUpdate: () => {
             if (self.direction == -1) {
                 showOnChangeDirection(foot)
@@ -106,3 +108,4 @@ feet.forEach((foot, i) => {
         }
     })
 });
+
