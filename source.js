@@ -43,8 +43,8 @@ speach.forEach((comment, i) => {
 
 
 hideInitialtext = () => {
-    const initalText = document.querySelector('.initial-text');
-    initalText.style.display = 'none';
+    // const initalText = document.querySelector('.initial-text');
+    // initalText.style.display = 'none';
 };
 
 let feetContent = document.querySelector('.feet-content');
@@ -95,9 +95,12 @@ feet.forEach((foot, i) => {
             displayFeetAndText(foot); 
         },
         onLeave: () => { 
-            hideOnEnd(foot);
+            console.log("HIDE ON LEAVE")
+            hideOnEnd(foot)
         },
         onLeaveBack: () => { 
+            
+            console.log("HIDE ON LEAVE BACK");
             hideOnEnd(foot); 
         },
         onUpdate: () => {
@@ -108,4 +111,3 @@ feet.forEach((foot, i) => {
         }
     })
 });
-
