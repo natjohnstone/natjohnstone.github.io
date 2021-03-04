@@ -172,3 +172,9 @@ a {
     margin-bottom: -40vh;
   }
 }
+
+@media only screen and (max-aspect-ratio: 2/1) {
+  .speach-img {
+    margin-bottom: -45vh;
+  }
+}
