@@ -37,7 +37,7 @@ speach.forEach((comment, i) => {
     scrollTrigger: {
       trigger: ".head-section",
       start: "top top",
-      end: "+=" + (innerHeight * 7),
+      end: "+=" + (innerHeight * 8),
       pin: true,
       scrub: true
     }
@@ -46,7 +46,7 @@ speach.forEach((comment, i) => {
     trigger: comment,
     x: 50,
     start: "bottom bottom",
-    end: () => `+=${innerHeight * 1}`,
+    end: () => `+=${innerHeight}`,
     pin: true,
     onEnter: () => {
       displaySpeachText(comment);
