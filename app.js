@@ -46,7 +46,7 @@ speach.forEach((comment, i) => {
     trigger: comment,
     x: 50,
     start: "bottom bottom",
-    end: () => `+=${innerHeight * 1.3}`,
+    end: () => `+=${innerHeight * 1}`,
     pin: true,
     onEnter: () => {
       displaySpeachText(comment);
