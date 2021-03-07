@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Butler;
+    src: url(../fonts/Butler/Butler_Regular.otf);
+  }
+
+body {
+
+    font-family: Butler;
+    text-align: center;
+}
+
+h1 {
+
+    padding: 1em;
+}
+
+.links {
+    padding: 2em;
+}
+
+.logo {
+    border-radius: 5px;
+}
